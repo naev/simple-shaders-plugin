@@ -1,0 +1,6 @@
+<plugin name="Simple Shaders">
+ <author>Naev DevTeam</author>
+ <version>1.0</version>
+ <compatibility>^0\.1[01]\..*</compatibility>
+ <priority>1</priority>
+</plugin>

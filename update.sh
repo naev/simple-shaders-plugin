@@ -2,18 +2,18 @@
 
 REPO="https://raw.githubusercontent.com/naev/naev/main/dat/"
 
-function dodiff () {
+function dopatch () {
    basefile=$(basename $1)
-   difffile="`pwd`/$2"
+   patchfile="`pwd`/$2"
    outfile="`pwd`/$1"
    tempdir=`mktemp -d`
 
    pushd "$tempdir"
    wget "${REPO}$1" -O "$basefile"
-   patch "$basefile" < "$difffile"
+   patch "$basefile" < "$patchfile"
    mv "$basefile" "$outfile"
    popd
    rmdir "$tempdir"
 }
 
-dodiff "scripts/love_shaders.lua" "love_shaders.lua.diff"
+dopatch "scripts/love_shaders.lua" "love_shaders.lua.patch"

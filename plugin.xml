@@ -3,4 +3,5 @@
  <version>1.0</version>
  <compatibility>^0\.1[01]\..*</compatibility>
  <priority>1</priority>
+ <description>Gets rid of complicated shader effects to make the game run smoother on older hardware.</description>
 </plugin>

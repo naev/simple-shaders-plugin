@@ -48,7 +48,7 @@
 -   return res.y - res.x;
 -}
 -
- vec4 effect( vec4 color, Image tex, vec2 texture_coords, vec2 screen_coords )
+ vec4 effect( vec4 colour, Image tex, vec2 texture_coords, vec2 screen_coords )
  {
 -   /* Calculate coordinates relative to camera. */
 -   vec2 uv = (texture_coords - 0.5) * love_ScreenSize.xy * u_camera.z + u_camera.xy + u_r;
@@ -92,16 +92,16 @@
 -      a *= 0.7;
 -   }
 -
--   /* Blueish color set */
+-   /* Blueish colour set */
 -   vec3 cexp = vec3(6.0, 4.0, 2.0);
 -
 -   /* Convert to colour, clamp and multiply by base colour. */
 -   vec3 col = vec3(pow(v, cexp.x), pow(v, cexp.y), pow(v, cexp.z)) * 2.0;
--   return color * vec4( clamp( col, 0.0, 1.0 ), 1.0);
+-   return colour * vec4( clamp( col, 0.0, 1.0 ), 1.0);
 +   return vec4(0.0) + vec4(u_camera,0.0);
  }
  ]], strength, speed, love_math.random() )
- 
+
     local shader = graphics.newShader( pixelcode, _vertexcode )
 -   shader._dt = 1000 * love_math.random()
     shader.update = function (self, dt)

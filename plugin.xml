@@ -1,7 +1,7 @@
 <plugin name="Simple Shaders">
  <author>Naev DevTeam</author>
- <version>1.0</version>
- <compatibility>^0\.1[01]\..*</compatibility>
+ <version>1.1</version>
+ <compatibility>^0\.11\..*</compatibility>
  <priority>1</priority>
  <description>Gets rid of complicated shader effects to make the game run smoother on older hardware.</description>
 </plugin>

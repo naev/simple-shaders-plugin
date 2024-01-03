@@ -4,4 +4,5 @@
  <compatibility>^0\.11\..*</compatibility>
  <priority>1</priority>
  <description>Gets rid of complicated shader effects to make the game run smoother on older hardware.</description>
+ <source>https://github.com/naev/simple-shaders-plugin.git</source>
 </plugin>
